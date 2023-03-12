@@ -278,6 +278,10 @@ class GoogleSignIn {
         : null);
   }
 
+  GoogleSignInAccount? setCurrentUser(GoogleSignInAccount? currentUser) {
+    return _setCurrentUser(currentUser);
+  }
+
   GoogleSignInAccount? _setCurrentUser(GoogleSignInAccount? currentUser) {
     if (currentUser != _currentUser) {
       _currentUser = currentUser;
